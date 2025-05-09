@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="icon" href="assets/images/favicon.png" type="image/png">
+<meta property="og:title" content="World-Tech Studio – Freelance Developer" />
+<meta property="og:description" content="Modern, responsive front-end web development." />
+<meta property="og:image" content="assets/images/preview.png" />
+
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>World-Tech Studio | Freelance Developer</title>
+  <link rel="stylesheet" href="style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet" />
+</head>
+<body>
+
+    <header class="hero">
+        <nav id="navMenu">
+          <h1 class="logo">World-Tech Studio</h1>
+          <button class="nav-toggle" id="navToggle" aria-label="Toggle navigation">
+            ☰
+          </button>
+          <ul>
+            <li><a href="#hero">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#services">Services</a></li>
+            <li><a href="#projects">Work</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </nav>
+        <div class="nav-container">
+          <h2>I design and build beautiful websites</h2>
+          <p>Freelance front-end developer for hire</p>
+          <a href="#contact" class="btn">Hire Me</a>
+        </div>
+      </header>
+    
+      
+
+    <!-- About section will go here -->
+    <section id="about" class="about" data-aos="fade-left">
+        <div class="container">
+          <h2>About Me</h2>
+          <p>
+            I'm a passionate front-end developer who loves building clean, responsive websites.
+            With a focus on simplicity, performance, and modern design, I help businesses and individuals stand out online.
+          </p>
+      
+          <div class="skills">
+            <div class="skill">HTML5</div>
+            <div class="skill">CSS3</div>
+            <div class="skill">JavaScript</div>
+            <div class="skill">Responsive Design</div>
+          </div>
+        </div>
+      </section>
+      
+  </section>
+
+    <!-- Services section will go here -->
+    <section id="services" class="services" data-aos="slide-right">
+        <div class="container">
+          <h2>Services</h2>
+          <div class="service-cards">
+            <div class="card" data-aos="fade-up">
+              <h3>Web Design</h3>
+              <p>I create modern, user-friendly interfaces tailored to your brand.</p>
+            </div>
+            <div class="card" data-aos="fade-right">
+              <h3>Responsive Development</h3>
+              <p>Websites that work seamlessly on desktops, tablets, and phones.</p>
+            </div>
+            <div class="card" data-aos="fade-left">
+              <h3>Landing Pages</h3>
+              <p>High-converting landing pages for products, portfolios, and events.</p>
+            </div>
+          </div>
+        </div>
+      </section>
+      
+    <!-- Portfolio/Projects section will go here -->
+    <section id="projects" class="projects" data-aos="flip-left">
+        <div class="container">
+          <h2>Recent Work</h2>
+          <div class="project-grid">
+            <div class="project-card">
+              <img src="pics/portfolio projects.png" alt="Project 1">
+              <h3>Portfolio Website</h3>
+              <p>A personal portfolio site to showcase my skills and projects.</p>
+              <a href="https://micky-09.github.io/Portfolio/" target="_blank" class="btn">View Project</a>
+            </div>
+            <div class="project-card">
+              <img src="pics/master-new skill.png" alt="Project 2">
+              <h3>Landing Page</h3>
+              <p>Responsive landing page built for a startup using HTML and CSS.</p>
+              <a href="https://micky-09.github.io/SkillBridge-land-page/" target="_blank" class="btn">View Project</a>
+            </div>
+          </div>
+        </div>
+      </section>
+      
+    <!-- Contact form will go here -->
+    <section id="contact" class="contact" data-aos="zoom-in">
+        <div class="container">
+          <h2>Contact Me</h2>
+          <p>Have a project or just want to say hi? Feel free to reach out.</p>
+      
+          <form action="https://formspree.io/f/xdkgdzly" method="POST" class="contact-form">
+            <input type="text" name="name" placeholder="Your Name" required />
+            <input type="email" name="email" placeholder="Your Email" required />
+            <textarea name="message" placeholder="Your Message" rows="5" required></textarea>
+            <button type="submit" class="btn">Send Message</button>
+          </form>
+        </div>
+      </section>
+
+  <footer>
+    <p>© 2025 World-Tech Corporation. All rights reserved.</p>
+  </footer>
+
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script>
+  AOS.init({
+    duration: 800, // animation duration in ms
+    once: false    // only animate 
+  });
+</script>
+
+<script>
+    const toggle = document.getElementById('navToggle');
+    const menu = document.getElementById('navMenu');
+  
+    toggle.addEventListener('click', () => {
+      menu.classList.toggle('open');
+    });
+  </script>
+  
+  
+</body>
+</html>
